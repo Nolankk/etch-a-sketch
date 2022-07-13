@@ -27,6 +27,7 @@ body {
 
 .header {
     display: flex;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
     justify-content: center;
     color: #FAD099;
 }
