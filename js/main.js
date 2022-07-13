@@ -56,7 +56,7 @@ changeGrid.onclick = function() {
 black.onclick = function() {
     grid.forEach(item => {
         item.addEventListener('mouseover', event => {
-            event.target.style.backgroundColor = black;
+            event.target.style.backgroundColor = 'black';
         });
     });
 }
