@@ -52,6 +52,14 @@ body {
     color: #FFA07A;
 }
 
+.footer a {
+    color: red;
+}
+
+.footer a:active {
+    color: blue;
+}
+
 #gridContainer {
     margin: 32px;
     box-sizing: border-box;
