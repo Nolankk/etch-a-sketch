@@ -4,18 +4,49 @@ body {
 }
 
 .container {
+    padding: 64px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    background-color: #FADFB0;
     font-family: 'Roboto', sans-serif;
+}
+
+.containerTwo {
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 32px;
+    width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: salmon;
 }
 
 .header {
     display: flex;
     justify-content: center;
+    color: #FAD099;
+}
+
+.controls button {
+    width: 128px;
+    height: 64px;
+    background-color: rgba(118,76,41,0);
+    border: solid 3px #FAD099;
+    color: #FAD099;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.controls button:hover {
+    color: #FFA07A;
+    background-color: #FAD099;
+}
+
+.footer {
+    color: #FAD099;
 }
 
 #gridContainer {
