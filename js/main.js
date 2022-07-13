@@ -8,6 +8,8 @@ function randomColor() {
     return Math.floor(Math.random()*16777215).toString(16);
 }
 
+// Creates a grid with size 'gridSize' and adds 'mouseover' eventListener
+// to all grid squares that changes backgroundColor when triggered
 function createGrid(gridSize = 16) {
     for (let i = 0; i<gridSize**2; i++)
     {
@@ -17,6 +19,7 @@ function createGrid(gridSize = 16) {
         newDiv.style.height = 600/gridSize + 'px';
         gridContainer.appendChild(newDiv);
     }
+    // Add eventListener 'mouseover' to all grid squares
     const grid = document.querySelectorAll('#grid');
     grid.forEach(item => {
         item.addEventListener('mouseover', event => {
@@ -26,14 +29,18 @@ function createGrid(gridSize = 16) {
     return grid;
 }
 
+// Creates initial grid
 grid = createGrid();
 
+// Removes a grid 'grid'
 function removeGrid(grid) {
     grid.forEach(item => {
         item.remove();
     });
 }
 
+// Prompts user for grid size then calls removeGrid() and createGrid()
+// to make a new grid
 changeGrid.onclick = function() {
     let gridSize = prompt('How large should the grid be (?x?)?');
 
@@ -45,6 +52,7 @@ changeGrid.onclick = function() {
     grid = createGrid(gridSize);
 }
 
+// When 'Black' button is clicked, change eventListener backgroundColor to black
 black.onclick = function() {
     grid.forEach(item => {
         item.addEventListener('mouseover', event => {
@@ -53,6 +61,7 @@ black.onclick = function() {
     });
 }
 
+// When 'Rainbow' button is clicked, change eventListener backgroundColor to rainbow
 rainbow.onclick = function() {
     grid.forEach(item => {
         item.addEventListener('mouseover', event => {
@@ -61,6 +70,7 @@ rainbow.onclick = function() {
     });
 }
 
+// When 'Eraser' button is clicked, change eventListener backgroundColor to white
 eraser.onclick = function() {
     grid.forEach(item => {
         item.addEventListener('mouseover', event => {
