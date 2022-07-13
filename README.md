@@ -5,4 +5,4 @@ My version of etch-a-sketch for The Odin Project
 https://nolankk.github.io/etch-a-sketch/
 
 # Clone this repository
-git@github.com:Nolankk/etch-a-sketch.git
+`git@github.com:Nolankk/etch-a-sketch.git`
