@@ -5,6 +5,7 @@ body {
 
 .container {
     padding: 64px;
+    padding-bottom: 0;
     color: white;
     display: flex;
     flex-direction: column;
@@ -46,7 +47,8 @@ body {
 }
 
 .footer {
-    color: #FAD099;
+    margin-top: 32px;
+    color: #FFA07A;
 }
 
 #gridContainer {
